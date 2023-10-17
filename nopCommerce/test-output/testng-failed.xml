@@ -7,6 +7,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.nopCommerce.testCases.LoginPageTest">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="loadConfig"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.nopCommerce.testCases.LoginPageTest -->
       <class name="com.nopCommerce.testCases.AddToCartTest">
         <methods>
           <include name="loadConfig"/>
@@ -16,24 +25,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.nopCommerce.testCases.AddToCartTest -->
-      <class name="com.nopCommerce.testCases.NewRagisterTest">
-        <methods>
-          <include name="loadConfig"/>
-          <include name="verifyAccountCreationPage"/>
-          <include name="tearDown"/>
-          <include name="afterSuite"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.nopCommerce.testCases.NewRagisterTest -->
-      <class name="com.nopCommerce.testCases.LoginPageTest">
-        <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="loadConfig"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- com.nopCommerce.testCases.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
